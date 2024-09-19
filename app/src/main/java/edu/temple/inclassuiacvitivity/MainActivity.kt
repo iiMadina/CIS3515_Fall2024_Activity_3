@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         /* Step 1: Populate this array */
         val numberArray = Array(50){i -> (i + 1) * 2}
 
+        // every variable in this function scope starts with 'spinner.'
         with (spinner) {
             /* Step 2: Create adapter to display items from array in Spinner */
             adapter = ArrayAdapter(this@MainActivity, android.R.layout.simple_spinner_item, numberArray)
